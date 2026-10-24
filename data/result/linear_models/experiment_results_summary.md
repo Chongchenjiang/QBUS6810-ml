@@ -89,7 +89,7 @@ The Lasso screen used a higher iteration allowance and focused on alpha values f
 | 150 | 113,230.3878 | 157,013.4615 | No warning |
 | 200 | 114,013.9668 | 158,203.9149 | No warning |
 
-Alpha 20 was then refitted under a stricter confirmation run. It achieved MSE of 51,756,695,937.4231, R-squared of 0.728639, MAE of $110,000.1670, WAE 2:1 of $152,565.2820, and WAE 1:2 of $177,435.2189, with 1,082 non-zero coefficients. However, it again reached the 5,000-iteration limit and produced a convergence warning, with a dual gap of approximately 22.14 million. Its small apparent advantage over Ridge alpha 10 was therefore not treated as sufficiently reliable for selection. Ridge alpha 10 remained the stable main candidate. Lasso sparsity is useful for prediction and feature selection, but a zero coefficient under penalisation does not prove that the corresponding original feature is unimportant in every context.
+The earlier alpha-20 strict fit reached its 5,000-iteration limit, so the convergence experiment was repeated with training-only centering and a precomputed Gram matrix. This accelerates the same Lasso objective without changing Feature Set D, the training observations, the dollar-scale target, or the alpha values. Every alpha from 10 to 10,000 converged at `tol=1e-4` within 50,000 iterations. Alpha 20 remained the main-scenario winner and was then confirmed at `tol=1e-5`, converging in 3,112 iterations. Its independently calculated dual gap was 1,529,466.05, below the training-only threshold of 1,530,368.19. The confirmed validation results were MSE 51,756,702,159.3747, R-squared 0.728639, MAE $110,000.6752, WAE 2:1 $152,566.3890, and WAE 1:2 $177,435.6366, with 1,074 non-zero coefficients. Tightening the tolerance changed validation predictions by only $5.78 on average relative to the converged `tol=1e-4` solution. The convergence problem is therefore resolved. Lasso sparsity can support feature selection, but a zero coefficient under penalisation does not prove that the corresponding original feature is unimportant in every context.
 
 ## Domain-guided interaction experiments
 
@@ -108,7 +108,7 @@ The best Ridge alpha for each interaction feature set under the main WAE 2:1 cri
 | E5 - Time Base plus Basement x Flood | 102 | 3,821 | 8 | 52,400,555,885.5938 | 0.725263 | 110,015.9458 | 169,567.0602 | 160,480.7771 |
 | E6 - Combined Domain Interactions | 191 | 3,910 | 5 | 41,971,105,547.5078 | 0.779945 | 104,071.2354 | 161,807.3522 | 150,406.3539 |
 
-The combined interaction model E6 materially improved MSE, R-squared, MAE, and WAE 1:2. Its main-scenario WAE 2:1 was nevertheless worse than the simpler Feature Set D Ridge model. This pattern shows that the interactions were informative, but they changed the balance between overvaluation and undervaluation errors rather than improving every business-weighted objective simultaneously.
+The combined interaction model E6 materially improved MSE, R-squared, MAE, and WAE 1:2. Its main-scenario WAE 2:1 was nevertheless worse than the Feature Set D Ridge and converged Lasso models. This pattern shows that the interactions were informative, but they changed the balance between overvaluation and undervaluation errors rather than improving every business-weighted objective simultaneously.
 
 ## Overall validation-stage model selection
 
@@ -116,17 +116,17 @@ All eligible validation candidates were compared under the three fixed WAE scena
 
 | Scenario | Selected validation model | Alpha | MSE ($ squared) | R-squared | MAE ($) | Scenario WAE ($) |
 |---|---|---:|---:|---:|---:|---:|
-| Main: greater concern about overvaluation (2:1) | Ridge with Feature Set D: Size x Archive Age | 10 | 52,210,667,718.5284 | 0.726259 | 110,436.6422 | 153,116.6621 |
+| Main: greater concern about overvaluation (2:1) | Lasso with Feature Set D | 20 | 51,756,702,159.3747 | 0.728639 | 110,000.6752 | 152,566.3890 |
 | Alternative: equal priority (1:1) | Ridge with E6: Combined Domain Interactions | 8 | 42,178,351,976.5333 | 0.778858 | 104,070.8691 | 104,070.8691 |
 | Alternative: greater concern about undervaluation (1:2) | Ridge with E6: Combined Domain Interactions | 8 | 42,178,351,976.5333 | 0.778858 | 104,070.8691 | 150,381.6516 |
 
-For the E6 model at alpha 8, the main-scenario WAE 2:1 was $161,830.9556. This was higher than the $153,116.6621 achieved by Feature Set D with Ridge alpha 10. Therefore, the main conclusion is not that interactions are ineffective. Instead, the best model depends on the error-direction priority specified before model selection. Under the prespecified 2:1 overvaluation priority, the validation-stage choice is Ridge alpha 10 with Feature Set D. Under equal weighting or greater concern about undervaluation, the combined interaction model is preferred.
+For the E6 model at alpha 8, the main-scenario WAE 2:1 was $161,830.9556. This was higher than $153,116.6621 for Feature Set D Ridge alpha 10 and $152,566.3890 for Feature Set D Lasso alpha 20. Therefore, the interactions remain useful, but the preferred model depends on the error-direction priority specified before model selection. Under the prespecified 2:1 overvaluation priority, the validation-stage choice is the converged Lasso alpha-20 model with Feature Set D. Under equal weighting or greater concern about undervaluation, the combined-interaction Ridge model is preferred.
 
 ## Development-stage decision and limitations
 
-The current evidence supports Ridge alpha 10 with Feature Set D as the provisional model under the prespecified main WAE 2:1 scenario. It substantially outperformed the Global Mean baseline and remained stable across nearby alpha values. The combined interaction model is retained as an important sensitivity result because it achieved the strongest general accuracy and was preferred under the two alternative weighting scenarios.
+The current evidence supports Lasso alpha 20 with Feature Set D as the provisional model under the prespecified main WAE 2:1 scenario. With these predictions held fixed, its WAE was $152,566.39 under 2:1, $110,000.68 under 1:1, and $177,435.64 under 1:2. These values were respectively 55.44%, 53.90%, and 52.48% lower than the Global Mean baseline. The combined-interaction Ridge model is retained as an important sensitivity result because it achieved the strongest general accuracy and was preferred under the two alternative weighting scenarios.
 
-These are validation results, not final estimates of out-of-sample performance. The 2025 test set must remain untouched until the model specification and main decision rule are frozen. The final test should be run once for the selected model and the unchanged baseline. In addition, property overlap does not establish leakage, and `unseen` in this diagnostic means only that a property was absent from this training period; it does not prove that the property had no earlier sale outside the available training window. Finally, Lasso coefficients should not be interpreted as causal importance, and the strict alpha-20 Lasso result should not be preferred over the stable Ridge result unless its convergence problem is resolved without using test-set feedback.
+These are validation results, not final estimates of out-of-sample performance. The 2025 test set must remain untouched until the model specification and main decision rule are frozen. The final test should be run once for the selected model and the unchanged baseline. Property overlap does not establish leakage, and `unseen` in this diagnostic means only that a property was absent from this training period; it does not prove that the property had no earlier sale outside the available training window. Lasso coefficients should not be interpreted as causal importance.
 
 ## Machine-readable result files
 
@@ -142,4 +142,10 @@ The exact candidate-level outputs are stored in the same `data/result/linear_mod
 - `interaction_scenario_winners.csv`: Best interaction candidate under each WAE scenario.
 - `overall_model_selection_candidates.csv`: Combined eligible validation candidates.
 - `overall_model_selection_winners.csv`: Overall validation winner under each WAE scenario.
+- `lasso_convergence_results.csv`: Strict Lasso convergence diagnostics and validation metrics.
+- `lasso_validation_predictions.csv`: Validation predictions from each strict Lasso fit.
+- `validation_results_all_runs.csv`: Complete 115-row register of recorded validation runs.
+- `validation_results_table.csv`: Compact 15-row comparison with one representative per model family and feature set.
+- `validation_results_table.md`: Report-readable unified results table and complete run register.
+- `selected_model_fixed_scenario_comparison.csv`: Fixed selected-model predictions compared with the baseline under all three WAE scenarios.
 
