@@ -43,3 +43,5 @@ acs5_median_household_owner_occupied_value,acs5_median_household_owner_occupied_
 acs5_percent_household_owner_occupied,acs5_percent_household_owner_occupied,,,
 ,acs5_percent_household_total_occupied_w_sel_cond,,,
 other_tax_bill_rate,other_tax_bill_rate,other_tax_bill_rate,,
+inter_bldg_qlty,inter_bldg_qlty,,,
+inter_land_bldg,inter_land_bldg,,,
