@@ -1,0 +1,95 @@
+interaction_group,feature,definition,training_support
+Time-aware base,valuation_month_index,Months since January 2023 at the valuation date,54853
+Time-aware base,building_age_at_valuation,Valuation year minus archived year built,54853
+Size x age,size_x_building_age_at_valuation,Building square feet multiplied by age at valuation,54853
+Land transformation,log1p_land_sf,Natural log of one plus nonnegative land square feet,54853
+Size x property class,int_size_by_class_01,char_bldg_sf x indicator(meta_class=202); reference=203,6332
+Size x property class,int_size_by_class_02,char_bldg_sf x indicator(meta_class=204); reference=203,2402
+Size x property class,int_size_by_class_03,char_bldg_sf x indicator(meta_class=205); reference=203,3871
+Size x property class,int_size_by_class_04,char_bldg_sf x indicator(meta_class=206); reference=203,1636
+Size x property class,int_size_by_class_05,char_bldg_sf x indicator(meta_class=207); reference=203,1199
+Size x property class,int_size_by_class_06,char_bldg_sf x indicator(meta_class=208); reference=203,551
+Size x property class,int_size_by_class_07,char_bldg_sf x indicator(meta_class=209); reference=203,250
+Size x property class,int_size_by_class_08,char_bldg_sf x indicator(meta_class=210); reference=203,752
+Size x property class,int_size_by_class_09,char_bldg_sf x indicator(meta_class=211); reference=203,7931
+Size x property class,int_size_by_class_10,char_bldg_sf x indicator(meta_class=212); reference=203,477
+Size x property class,int_size_by_class_11,char_bldg_sf x indicator(meta_class=234); reference=203,4672
+Size x property class,int_size_by_class_12,char_bldg_sf x indicator(meta_class=278); reference=203,3840
+Size x property class,int_size_by_class_13,char_bldg_sf x indicator(meta_class=295); reference=203,3652
+Size x township,int_size_by_township_01,char_bldg_sf x indicator(meta_township_code=10); reference=72,286
+Size x township,int_size_by_township_02,char_bldg_sf x indicator(meta_township_code=11); reference=72,651
+Size x township,int_size_by_township_03,char_bldg_sf x indicator(meta_township_code=12); reference=72,1626
+Size x township,int_size_by_township_04,char_bldg_sf x indicator(meta_township_code=13); reference=72,1804
+Size x township,int_size_by_township_05,char_bldg_sf x indicator(meta_township_code=14); reference=72,237
+Size x township,int_size_by_township_06,char_bldg_sf x indicator(meta_township_code=15); reference=72,545
+Size x township,int_size_by_township_07,char_bldg_sf x indicator(meta_township_code=16); reference=72,876
+Size x township,int_size_by_township_08,char_bldg_sf x indicator(meta_township_code=17); reference=72,599
+Size x township,int_size_by_township_09,char_bldg_sf x indicator(meta_township_code=18); reference=72,1291
+Size x township,int_size_by_township_10,char_bldg_sf x indicator(meta_township_code=19); reference=72,336
+Size x township,int_size_by_township_11,char_bldg_sf x indicator(meta_township_code=20); reference=72,1046
+Size x township,int_size_by_township_12,char_bldg_sf x indicator(meta_township_code=21); reference=72,1499
+Size x township,int_size_by_township_13,char_bldg_sf x indicator(meta_township_code=22); reference=72,1707
+Size x township,int_size_by_township_14,char_bldg_sf x indicator(meta_township_code=23); reference=72,1086
+Size x township,int_size_by_township_15,char_bldg_sf x indicator(meta_township_code=24); reference=72,1071
+Size x township,int_size_by_township_16,char_bldg_sf x indicator(meta_township_code=25); reference=72,1256
+Size x township,int_size_by_township_17,char_bldg_sf x indicator(meta_township_code=26); reference=72,380
+Size x township,int_size_by_township_18,char_bldg_sf x indicator(meta_township_code=27); reference=72,738
+Size x township,int_size_by_township_19,char_bldg_sf x indicator(meta_township_code=28); reference=72,1344
+Size x township,int_size_by_township_20,char_bldg_sf x indicator(meta_township_code=29); reference=72,1368
+Size x township,int_size_by_township_21,char_bldg_sf x indicator(meta_township_code=30); reference=72,635
+Size x township,int_size_by_township_22,char_bldg_sf x indicator(meta_township_code=31); reference=72,2132
+Size x township,int_size_by_township_23,char_bldg_sf x indicator(meta_township_code=32); reference=72,1515
+Size x township,int_size_by_township_24,char_bldg_sf x indicator(meta_township_code=33); reference=72,132
+Size x township,int_size_by_township_25,char_bldg_sf x indicator(meta_township_code=34); reference=72,261
+Size x township,int_size_by_township_26,char_bldg_sf x indicator(meta_township_code=35); reference=72,1385
+Size x township,int_size_by_township_27,char_bldg_sf x indicator(meta_township_code=36); reference=72,499
+Size x township,int_size_by_township_28,char_bldg_sf x indicator(meta_township_code=37); reference=72,2734
+Size x township,int_size_by_township_29,char_bldg_sf x indicator(meta_township_code=38); reference=72,1748
+Size x township,int_size_by_township_30,char_bldg_sf x indicator(meta_township_code=39); reference=72,1858
+Size x township,int_size_by_township_31,char_bldg_sf x indicator(meta_township_code=70); reference=72,3645
+Size x township,int_size_by_township_32,char_bldg_sf x indicator(meta_township_code=71); reference=72,5312
+Size x township,int_size_by_township_33,char_bldg_sf x indicator(meta_township_code=73); reference=72,1320
+Size x township,int_size_by_township_34,char_bldg_sf x indicator(meta_township_code=74); reference=72,365
+Size x township,int_size_by_township_35,char_bldg_sf x indicator(meta_township_code=75); reference=72,315
+Size x township,int_size_by_township_36,char_bldg_sf x indicator(meta_township_code=76); reference=72,584
+Size x township,int_size_by_township_37,char_bldg_sf x indicator(meta_township_code=77); reference=72,3499
+Log land area x township,int_log_land_by_township_01,log1p_land_sf x indicator(meta_township_code=10); reference=72,286
+Log land area x township,int_log_land_by_township_02,log1p_land_sf x indicator(meta_township_code=11); reference=72,651
+Log land area x township,int_log_land_by_township_03,log1p_land_sf x indicator(meta_township_code=12); reference=72,1626
+Log land area x township,int_log_land_by_township_04,log1p_land_sf x indicator(meta_township_code=13); reference=72,1804
+Log land area x township,int_log_land_by_township_05,log1p_land_sf x indicator(meta_township_code=14); reference=72,237
+Log land area x township,int_log_land_by_township_06,log1p_land_sf x indicator(meta_township_code=15); reference=72,545
+Log land area x township,int_log_land_by_township_07,log1p_land_sf x indicator(meta_township_code=16); reference=72,876
+Log land area x township,int_log_land_by_township_08,log1p_land_sf x indicator(meta_township_code=17); reference=72,599
+Log land area x township,int_log_land_by_township_09,log1p_land_sf x indicator(meta_township_code=18); reference=72,1291
+Log land area x township,int_log_land_by_township_10,log1p_land_sf x indicator(meta_township_code=19); reference=72,336
+Log land area x township,int_log_land_by_township_11,log1p_land_sf x indicator(meta_township_code=20); reference=72,1046
+Log land area x township,int_log_land_by_township_12,log1p_land_sf x indicator(meta_township_code=21); reference=72,1499
+Log land area x township,int_log_land_by_township_13,log1p_land_sf x indicator(meta_township_code=22); reference=72,1707
+Log land area x township,int_log_land_by_township_14,log1p_land_sf x indicator(meta_township_code=23); reference=72,1086
+Log land area x township,int_log_land_by_township_15,log1p_land_sf x indicator(meta_township_code=24); reference=72,1071
+Log land area x township,int_log_land_by_township_16,log1p_land_sf x indicator(meta_township_code=25); reference=72,1256
+Log land area x township,int_log_land_by_township_17,log1p_land_sf x indicator(meta_township_code=26); reference=72,380
+Log land area x township,int_log_land_by_township_18,log1p_land_sf x indicator(meta_township_code=27); reference=72,738
+Log land area x township,int_log_land_by_township_19,log1p_land_sf x indicator(meta_township_code=28); reference=72,1344
+Log land area x township,int_log_land_by_township_20,log1p_land_sf x indicator(meta_township_code=29); reference=72,1368
+Log land area x township,int_log_land_by_township_21,log1p_land_sf x indicator(meta_township_code=30); reference=72,635
+Log land area x township,int_log_land_by_township_22,log1p_land_sf x indicator(meta_township_code=31); reference=72,2132
+Log land area x township,int_log_land_by_township_23,log1p_land_sf x indicator(meta_township_code=32); reference=72,1515
+Log land area x township,int_log_land_by_township_24,log1p_land_sf x indicator(meta_township_code=33); reference=72,132
+Log land area x township,int_log_land_by_township_25,log1p_land_sf x indicator(meta_township_code=34); reference=72,261
+Log land area x township,int_log_land_by_township_26,log1p_land_sf x indicator(meta_township_code=35); reference=72,1385
+Log land area x township,int_log_land_by_township_27,log1p_land_sf x indicator(meta_township_code=36); reference=72,499
+Log land area x township,int_log_land_by_township_28,log1p_land_sf x indicator(meta_township_code=37); reference=72,2734
+Log land area x township,int_log_land_by_township_29,log1p_land_sf x indicator(meta_township_code=38); reference=72,1748
+Log land area x township,int_log_land_by_township_30,log1p_land_sf x indicator(meta_township_code=39); reference=72,1858
+Log land area x township,int_log_land_by_township_31,log1p_land_sf x indicator(meta_township_code=70); reference=72,3645
+Log land area x township,int_log_land_by_township_32,log1p_land_sf x indicator(meta_township_code=71); reference=72,5312
+Log land area x township,int_log_land_by_township_33,log1p_land_sf x indicator(meta_township_code=73); reference=72,1320
+Log land area x township,int_log_land_by_township_34,log1p_land_sf x indicator(meta_township_code=74); reference=72,365
+Log land area x township,int_log_land_by_township_35,log1p_land_sf x indicator(meta_township_code=75); reference=72,315
+Log land area x township,int_log_land_by_township_36,log1p_land_sf x indicator(meta_township_code=76); reference=72,584
+Log land area x township,int_log_land_by_township_37,log1p_land_sf x indicator(meta_township_code=77); reference=72,3499
+Basement x flood risk,int_basement_by_flood_01,indicator(char_bsmt=2.0) x FEMA flood indicator; basement reference=1.0,56
+Basement x flood risk,int_basement_by_flood_02,indicator(char_bsmt=3.0) x FEMA flood indicator; basement reference=1.0,120
+Basement x flood risk,int_basement_by_flood_03,indicator(char_bsmt=4.0) x FEMA flood indicator; basement reference=1.0,69

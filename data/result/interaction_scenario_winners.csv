@@ -1,0 +1,4 @@
+scenario,winning_feature_set,selected_alpha,selected_WAE,MSE,R2,MAE
+Main - Overvaluation Priority (2:1),C0 - Supplied Combined,12.0,153518.4842571788,53040217461.0408,0.721909319250851,110697.86821825424
+Alternative - Equal Priority (1:1),E6 - Combined Domain Interactions,8.0,104070.86908592562,42178351976.53335,0.7788582480332613,104070.86908592562
+Alternative - Undervaluation Priority (1:2),E6 - Combined Domain Interactions,8.0,150381.65161727683,42178351976.53335,0.7788582480332613,104070.86908592562

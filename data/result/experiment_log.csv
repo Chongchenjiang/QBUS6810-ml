@@ -1,0 +1,3 @@
+event,status,detail
+Ridge solver correction,Corrected,solver='lsqr' failed with sparse input and fit_intercept=True under scikit-learn 1.0.2; solver='sparse_cg' was used.
+Lasso low-alpha convergence,Warning retained,alpha=10 reached max_iter=500 at tol=1e-3. Its metrics are preliminary; alpha=100 is the lowest-WAE candidate without a convergence warning.
