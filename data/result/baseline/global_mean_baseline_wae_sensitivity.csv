@@ -1,0 +1,4 @@
+﻿Scenario,Overvaluation Weight,Undervaluation Weight,Baseline WAE ($)
+Equal priority,1,1,238599.61751825263
+Greater concern about overvaluation,2,1,342381.82310051686
+Greater concern about undervaluation,1,2,373417.0294542411

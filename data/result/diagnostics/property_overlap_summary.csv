@@ -1,0 +1,2 @@
+training_period,validation_period,training_transactions,validation_transactions,seen_transactions,unseen_transactions,distinct_overlapping_properties,seen_percentage
+2023-01-01 to 2024-06-30,2024-07-01 to 2024-12-31,54853,18132,1677,16455,1666,9.248841826604897

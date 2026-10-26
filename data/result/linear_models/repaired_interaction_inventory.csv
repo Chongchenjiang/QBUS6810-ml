@@ -1,0 +1,6 @@
+feature,definition,training_support
+int_centered_size_quality_deluxe,Training-centred building square feet x indicator(construction quality=1); Average quality is reference,600
+int_centered_size_quality_poor,Training-centred building square feet x indicator(construction quality=3); Average quality is reference,42
+log1p_land_sf_repaired,log1p(nonnegative land square feet),54853
+log1p_bldg_sf_repaired,log1p(nonnegative building square feet),54853
+int_centered_log_land_x_log_bldg,Training-centred log land area x training-centred log building area,54853

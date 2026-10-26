@@ -1,39 +1,61 @@
 {
   "created_utc": "2026-10-22T05:25:21.005856+00:00",
+  "last_verified_utc": "2026-10-25T11:23:45.599203+00:00",
   "format": "csv",
   "source_notebook": "assignment_6810.ipynb",
-  "pipeline_code_sha256": "f2bdd2a4cf2ac0d1323bf4023f1bb6878a08b89664aaf9e1e06dcb018f0e8044",
+  "feature_snapshot_pipeline_sha256": "ae3bda9aa0835ac5fd354c11c9b34ec721771bc7deb0e4d4320acfc9b8d7629b",
+  "current_notebook_pipeline_sha256": "ae3bda9aa0835ac5fd354c11c9b34ec721771bc7deb0e4d4320acfc9b8d7629b",
   "input_sha256": {
     "data/properties_2022.csv": "bcff744c1d365593b306397c85015373dc2d344e919a5189cec6fc7bea98751e",
     "data/sales.csv": "45b82f7b8530ea9d236a2610f7c6c29eb7a7b9157c484ef421eb40667a7e01ce",
     "data/variable_dictionary.csv": "dc37843fda0c19b4d261bcda7ce5b3578c43fe3937cfb6b5ae0e1c808e46952d",
-    "data/featureengineer.csv": "698219a942b5c939501ddb88873d3d20a67cbe3e964e9656b7b2755bf63decd9"
+    "data/featureengineer.csv": "7f769dcb8e07c0418dcd6017da43e07f455548f9841fd07ea08bc43fe78e0f02"
   },
   "target": "sale_price",
   "derived_target": "log_sale_price",
   "time_split": {
-    "train": "2023-01 through 2024-06",
-    "validation": "2024-07 through 2024-12",
-    "test": "2025-01 through 2025-12"
+    "train": "2023-01-01 through 2024-06-30",
+    "validation": "2024-07-01 through 2024-12-31",
+    "test": "2025-01-01 through 2025-12-31"
+  },
+  "membership": {
+    "train": {
+      "file": "train_membership.csv",
+      "rows": 54853,
+      "sha256": "1892aeafc2bfb232396970928ba8166898a448c0bff5cadf5dd37c852caf52d6"
+    },
+    "validation": {
+      "file": "validation_membership.csv",
+      "rows": 18132,
+      "sha256": "fee6ee24915a0ba650245eebd3f479fe6bd37d8249b7bd7528ef67aa287895cb"
+    },
+    "test": {
+      "file": "test_membership.csv",
+      "rows": 36322,
+      "sha256": "110cb70a1443f208bb340fa7ba75dd1e52f07544d5ccd455c9ea9e4a6c953aa0"
+    }
   },
   "splits": {
     "train": {
       "file": "train.csv",
       "rows": 54853,
-      "columns": 199,
-      "sha256": "8616b211c43dabfb3cd8c1e4e12510a9527028b05d0aeea033817de806b80c0d"
+      "columns": 211,
+      "sha256": "69f65c3f04bec4af68188f4185722a5b0b2096f2f3c4bd430205c61e9c8fa7b9",
+      "schema_status": "current schema"
     },
     "validation": {
       "file": "validation.csv",
       "rows": 18132,
-      "columns": 199,
-      "sha256": "d08808ffcdd3dd803d6fbfe2af08566de2edb21369bae84732bb9dd0682545b4"
+      "columns": 211,
+      "sha256": "ad207f76317673dee5434f368f62a3554c0cd8168e0e61cd6e66860d0f12c7c7",
+      "schema_status": "current schema"
     },
     "test": {
       "file": "test.csv",
       "rows": 36322,
-      "columns": 199,
-      "sha256": "367a2964010951b4e218ba4f862fa39c25dc5034970a2d08d6f68cd5625bb528"
+      "columns": 211,
+      "sha256": "b1bc3e6f5954582024feccad143e5f2fa6e3f76e308f5622f59969a0f951d05b",
+      "schema_status": "current schema"
     }
   }
 }
