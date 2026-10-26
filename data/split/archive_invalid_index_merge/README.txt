@@ -1,1 +1,0 @@
-These feature snapshots were archived because the earlier notebook joined sales and properties on a property_id index. The join returned the rows sorted by property_id instead of in sales.csv order, and later encoding steps dropped the identifiers, so these rows cannot be linked back to transaction_id or property_id.
