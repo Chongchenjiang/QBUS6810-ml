@@ -1,10 +1,9 @@
 {
   "created_utc": "2026-10-22T05:25:21.005856+00:00",
-  "last_verified_utc": "2026-10-26T11:56:50.155544+00:00",
+  "last_verified_utc": "2026-10-26T12:53:21.121710+00:00",
   "format": "csv",
   "source_notebook": "assignment_6810.ipynb",
-  "feature_snapshot_pipeline_sha256": "ae3bda9aa0835ac5fd354c11c9b34ec721771bc7deb0e4d4320acfc9b8d7629b",
-  "current_notebook_pipeline_sha256": "ae3bda9aa0835ac5fd354c11c9b34ec721771bc7deb0e4d4320acfc9b8d7629b",
+  "pipeline_code_sha256": "ae3b1ddb713c78c02d5521278ebc5ed7ed58fcbe1f78a9b262e3b6f088dedd24",
   "input_sha256": {
     "data/properties_2022.csv": "bcff744c1d365593b306397c85015373dc2d344e919a5189cec6fc7bea98751e",
     "data/sales.csv": "45b82f7b8530ea9d236a2610f7c6c29eb7a7b9157c484ef421eb40667a7e01ce",
@@ -13,6 +12,18 @@
   },
   "target": "sale_price",
   "derived_target": "log_sale_price",
+  "preprocessing_fit_scope": "training split only",
+  "numeric_information_loss_check": {
+    "repaired_features_checked": [
+      "char_bldg_sf",
+      "char_land_sf",
+      "loc_longitude",
+      "acs5_median_income_per_capita_past_year",
+      "acs5_median_household_renter_occupied_gross_rent",
+      "acs5_median_household_owner_occupied_value"
+    ],
+    "unexpected_constant_features": []
+  },
   "time_split": {
     "train": "2023-01-01 through 2024-06-30",
     "validation": "2024-07-01 through 2024-12-31",
@@ -40,22 +51,24 @@
       "file": "train.csv",
       "rows": 54853,
       "columns": 211,
-      "sha256": "69f65c3f04bec4af68188f4185722a5b0b2096f2f3c4bd430205c61e9c8fa7b9",
-      "schema_status": "current schema"
+      "sha256": "9968adbaa619663d54332234c8537e912530c4c6db79f82aaf155e39b56db6e8",
+      "schema_status": "validated candidate schema"
     },
     "validation": {
       "file": "validation.csv",
       "rows": 18132,
       "columns": 211,
-      "sha256": "ad207f76317673dee5434f368f62a3554c0cd8168e0e61cd6e66860d0f12c7c7",
-      "schema_status": "current schema"
+      "sha256": "656ff297a2ac2bfcf9644e7505350b2a3b3769804f1c240a00180842d422eb5e",
+      "schema_status": "validated candidate schema"
     },
     "test": {
       "file": "test.csv",
       "rows": 36322,
       "columns": 211,
-      "sha256": "b1bc3e6f5954582024feccad143e5f2fa6e3f76e308f5622f59969a0f951d05b",
-      "schema_status": "current schema"
+      "sha256": "1a37862b7443d5529f6771737fe0efcd10f95833f7165a42e9024e7a4efec24a",
+      "schema_status": "validated candidate schema"
     }
-  }
+  },
+  "backup_directory": "backup_before_export_fix_20261026",
+  "candidate_directory": "candidate_export"
 }
