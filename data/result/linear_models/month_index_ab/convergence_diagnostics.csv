@@ -1,0 +1,3 @@
+model,alpha,tol,max_iter,n_iter,dual_gap,independent_dual_gap,dual_gap_threshold,converged,source
+A - Lasso D,20,1e-05,100000,3112,1529465.9804021658,1529466.0061302185,1530368.1888647068,True,Verified original result
+B - Lasso D + month,20,1e-05,100000,5975,1529066.9522040726,1529066.9515533447,1530368.1888647068,True,New controlled fit

@@ -1,7 +1,7 @@
 model_family,scenario,selection_status,selected_alpha,selected_WAE,MSE,R2,MAE,nonzero_coefficients
-Ridge,Main - Overvaluation Priority (2:1),Converged,12.0,153109.4936953541,52303501090.81886,0.7257719345778819,110441.4035353251,3817.0
-Ridge,Alternative - Equal Priority (1:1),Converged,10.0,110441.10202267152,52214948165.01374,0.7262362189379066,110441.10202267152,3817.0
-Ridge,Alternative - Undervaluation Priority (1:2),Converged,10.0,178200.03506971523,52214948165.01374,0.7262362189379066,110441.10202267152,3817.0
+Ridge,Main - Overvaluation Priority (2:1),Converged,12.0,153109.4936966351,52303501091.830894,0.7257719345725757,110441.40353611155,3817.0
+Ridge,Alternative - Equal Priority (1:1),Converged,10.0,110441.10202708446,52214948165.05788,0.7262362189376752,110441.10202708446,3817.0
+Ridge,Alternative - Undervaluation Priority (1:2),Converged,10.0,178200.03507834492,52214948165.05788,0.7262362189376752,110441.10202708446,3817.0
 Lasso,Main - Overvaluation Priority (2:1),No converged strict candidate,,,,,,
 Lasso,Alternative - Equal Priority (1:1),No converged strict candidate,,,,,,
 Lasso,Alternative - Undervaluation Priority (1:2),No converged strict candidate,,,,,,
