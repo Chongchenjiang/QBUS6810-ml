@@ -1,0 +1,4 @@
+scenario,model_family,winning_configuration,selected_WAE,baseline_WAE,reduction_pct
+Main - Overvaluation Priority (2:1),LightGBM,"C007 (log1p, 787 trees)",127131.07386232974,342381.82310051686,62.868626403392206
+Alternative - Equal Priority (1:1),LightGBM,"C007 (log1p, 787 trees)",101136.85211510779,238599.61751825263,57.612315909361875
+Alternative - Undervaluation Priority (1:2),LightGBM,"C007 (log1p, 787 trees)",176279.4824829936,373417.0294542411,52.79286465841402

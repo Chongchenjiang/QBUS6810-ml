@@ -1,0 +1,17 @@
+{
+  "selection_metric": "2024H2 validation WAE_2_1",
+  "A_winner": "C007 (log1p, 787 trees)",
+  "B_winner": "T008 (log1p, 732 trees)",
+  "fixed_improvement_pct": -6.331055533963445,
+  "decision": "retain_A",
+  "MAE_improves_while_WAE_worsens": true,
+  "train_month_range": [
+    0,
+    17
+  ],
+  "validation_month_range": [
+    18,
+    23
+  ],
+  "test_read": false
+}

@@ -1,0 +1,7 @@
+model_family,scenario,winning_configuration,feature_set,selected_WAE,MSE,R2,MAE
+HistGradientBoosting,Main - Overvaluation Priority (2:1),"H005 (log1p, 400 trees)",A_no_time,129111.29311936014,47922412190.622536,0.748742051462735,102426.05234029828
+HistGradientBoosting,Alternative - Equal Priority (1:1),"H002 (raw, 400 trees)",A_no_time,99834.42533357578,45027012780.89536,0.7639226753635163,99834.42533357578
+HistGradientBoosting,Alternative - Undervaluation Priority (1:2),"H002 (raw, 400 trees)",A_no_time,164079.05983580987,45027012780.89536,0.7639226753635163,99834.42533357578
+LightGBM,Main - Overvaluation Priority (2:1),"C007 (log1p, 787 trees)",A_no_time,127131.07386232974,47937265512.14258,0.7486641752682053,101136.85211510779
+LightGBM,Alternative - Equal Priority (1:1),"C001 (raw, 742 trees)",A_no_time,100015.43496134209,45200693296.18272,0.7630120657348021,100015.43496134209
+LightGBM,Alternative - Undervaluation Priority (1:2),"C003 (raw, 1391 trees)",A_no_time,165947.00579166692,45920606116.05268,0.7592375516822394,100099.07452954863
