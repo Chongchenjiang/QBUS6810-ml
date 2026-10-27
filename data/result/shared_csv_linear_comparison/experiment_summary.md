@@ -36,13 +36,13 @@ scikit-learn version: 1.0.2. All models use the same 209 exported numeric predic
 
 | Model             | Data Representation      | feature_set                           |      alpha |        WAE_2_1 |            MAE |                   MSE |       R2 | run_id   |
 |:------------------|:-------------------------|:--------------------------------------|-----------:|---------------:|---------------:|----------------------:|---------:|:---------|
-| Linear Regression | Original Linear Pipeline | D - Combined + Size x Age Interaction | nan        | 157,248.195315 | 113,045.100138 | 54,132,581,209.875946 | 0.716182 | V005     |
-| Ridge             | Original Linear Pipeline | D                                     |  12.000000 | 153,109.493695 | 110,441.403535 | 52,303,501,090.818863 | 0.725772 | V028     |
-| Lasso             | Original Linear Pipeline | D                                     |  20.000000 | 152,566.388979 | 110,000.675201 | 51,756,702,159.375252 | 0.728639 | V155     |
+| Linear Regression | Original Linear Pipeline | D - Combined + Size x Age Interaction | nan        | 157,254.530691 | 113,051.204225 | 54,135,001,187.274078 | 0.716169 | V005     |
+| Ridge             | Original Linear Pipeline | D                                     |  12.000000 | 153,109.493697 | 110,441.403536 | 52,303,501,091.830894 | 0.725772 | V028     |
+| Lasso             | Original Linear Pipeline | D                                     |  20.000000 | 152,566.388979 | 110,000.675201 | 51,756,702,159.375198 | 0.728639 | V155     |
 
 The two preprocessing pipelines have different feature representations, so their score differences cannot be attributed to the regression algorithm alone. This supplement does not replace the original linear selection or decide the final group model.
 
-Historical record note: `linear_feature_set_results.csv` differs from the 155-run register for Linear D by $6.34 in WAE (2:1). The comparison table uses the 155-run register and does not alter either historical file.
+Historical record note: `linear_feature_set_results.csv` differs from the 155-run register for Linear D by $0.00 in WAE (2:1). The comparison table uses the 155-run register and does not alter either historical file.
 
 Linear Regression matrix rank: 204/209; singular-value condition ratio: 1.12e+16.
 

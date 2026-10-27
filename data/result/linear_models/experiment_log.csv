@@ -1,3 +1,4 @@
 event,status,detail
 Ridge solver correction,Corrected,solver='lsqr' failed with sparse input and fit_intercept=True under scikit-learn 1.0.2; solver='sparse_cg' was used.
 Lasso low-alpha convergence,Warning retained,alpha=10 reached max_iter=500 at tol=1e-3. Its metrics are preliminary; alpha=100 is the lowest-WAE candidate without a convergence warning.
+Lasso convergence resolution,Resolved,"Feature Set D alpha=20 converged at tol=1e-5 in 3,112 iterations; independently verified dual gap 1,529,465.98 was below threshold 1,530,368.19."
