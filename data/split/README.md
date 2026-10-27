@@ -12,7 +12,11 @@ The CSV files preserve the final column order and row order and can be inspected
 
 `candidate_export/` contains the validated repaired CSVs that were used to publish the official files. Their SHA-256 hashes match the official CSVs. It is a publication reference, not a separate dataset for group members to load.
 
+Month indicators now use a fixed January reference category in all three splits. The October 2024 validation transactions have `month_10=1`; the other month columns, schema, row order, and targets were unchanged by this correction. `month_fix_staging_20261027/` contains the independently compared candidates used to verify the correction before publication.
+
 `backup_before_export_fix_20261026/` contains the three pre-fix CSVs and their old manifest. Keep it only for rollback or historical comparison; do not use those CSVs for modelling. The notebook's export cell and the manifest refer to these directories, so update those references if the directories are later removed.
+
+`backup_before_month_fix_20261027/` contains the official CSVs and manifest immediately before the October month-indicator correction. Use the current official CSVs for modelling.
 
 The final frames contain both `sale_price` and its derived `log_sale_price`. Exclude both columns from predictive features. The original `property_id` index was removed by the notebook's existing encoding steps; the saved index is positional and is not a property identifier.
 
