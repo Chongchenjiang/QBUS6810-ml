@@ -1,0 +1,3 @@
+model_family,run_id,configuration,feature_set,MSE,R2,MAE,WAE_2_1,WAE_1_1,WAE_1_2
+Random Forest,R006,"n_estimators=100, max_features=0.33, min_samples_leaf=3",Official split CSV (209 predictors),47708261064.62877,0.7498648491295159,101374.86865399516,140037.31592564986,101374.86865399516,164087.29003633556
+Decision Tree,T014,"max_depth=8, min_samples_leaf=10",Official split CSV (209 predictors),58754582890.3532,0.6919488128963263,116115.87696597638,162170.33355118183,116115.87696597638,186177.29734674728

@@ -4,47 +4,47 @@ Training rows: 54,853; validation rows: 18,132; predictors: 209. No 2025 outcome
 
 WAE (2:1) is selected in advance as the primary metric. Higher predictions than actual sales receive weight 2; other errors receive weight 1. MAE is in dollars, MSE in squared dollars, and R² is unitless.
 
-scikit-learn version: 1.0.2. All models use the same 209 exported numeric predictors without additional imputation, encoding, scaling, or feature engineering.
+scikit-learn version: 1.8.0. All models use the same 209 exported numeric predictors without additional imputation, encoding, scaling, or feature engineering.
 
 ## Best converged candidate per model
 
 | Model             | Data Representation          |      alpha |        WAE_2_1 |            MAE |                   MSE |       R2 |
 |:------------------|:-----------------------------|-----------:|---------------:|---------------:|----------------------:|---------:|
-| Linear Regression | Shared Exported CSV Pipeline | nan        | 184,558.379270 | 121,800.453902 | 63,181,968,850.117912 | 0.668736 |
-| Ridge             | Shared Exported CSV Pipeline | 100.000000 | 182,447.601226 | 121,085.411089 | 63,387,718,417.768707 | 0.667657 |
-| Lasso             | Shared Exported CSV Pipeline | 100.000000 | 180,751.622378 | 120,854.078798 | 63,328,748,447.098015 | 0.667966 |
+| Linear Regression | Shared Exported CSV Pipeline | nan        | 192,979.185936 | 127,426.799123 | 65,858,789,930.242401 | 0.654701 |
+| Ridge             | Shared Exported CSV Pipeline | 100.000000 | 190,929.164827 | 126,875.707469 | 66,286,384,364.572578 | 0.652459 |
+| Lasso             | Shared Exported CSV Pipeline | 100.000000 | 189,367.774872 | 126,647.480985 | 66,155,138,390.242363 | 0.653148 |
 
 ## All tested configurations
 
 | Model             | Data Representation          |      alpha |        WAE_2_1 |            MAE |                   MSE |       R2 | converged   | convergence_warning   |        n_iter |          dual_gap |   dual_gap_threshold |   nonzero_coefficients |
 |:------------------|:-----------------------------|-----------:|---------------:|---------------:|----------------------:|---------:|:------------|:----------------------|--------------:|------------------:|---------------------:|-----------------------:|
-| Linear Regression | Shared Exported CSV Pipeline | nan        | 184,558.379270 | 121,800.453902 | 63,181,968,850.117912 | 0.668736 | True        | False                 |    nan        |        nan        |           nan        |                    209 |
-| Ridge             | Shared Exported CSV Pipeline |   5.000000 | 184,384.184494 | 121,729.350426 | 63,185,058,152.494316 | 0.668720 | True        | False                 |    853.000000 |        nan        |           nan        |                    208 |
-| Ridge             | Shared Exported CSV Pipeline |  10.000000 | 184,235.925062 | 121,670.262197 | 63,192,833,367.397705 | 0.668679 | True        | False                 |    652.000000 |        nan        |           nan        |                    208 |
-| Ridge             | Shared Exported CSV Pipeline |  12.000000 | 184,179.072853 | 121,647.998532 | 63,196,317,849.440880 | 0.668661 | True        | False                 |    628.000000 |        nan        |           nan        |                    208 |
-| Ridge             | Shared Exported CSV Pipeline |  20.000000 | 183,963.020855 | 121,565.339227 | 63,211,318,292.613777 | 0.668582 | True        | False                 |    572.000000 |        nan        |           nan        |                    208 |
-| Ridge             | Shared Exported CSV Pipeline |  30.000000 | 183,715.996766 | 121,475.039633 | 63,231,547,877.114883 | 0.668476 | True        | False                 |    493.000000 |        nan        |           nan        |                    208 |
-| Ridge             | Shared Exported CSV Pipeline |  50.000000 | 183,287.610837 | 121,330.407415 | 63,274,712,808.113808 | 0.668250 | True        | False                 |    406.000000 |        nan        |           nan        |                    208 |
-| Ridge             | Shared Exported CSV Pipeline | 100.000000 | 182,447.601226 | 121,085.411089 | 63,387,718,417.768707 | 0.667657 | True        | False                 |    325.000000 |        nan        |           nan        |                    208 |
-| Lasso             | Shared Exported CSV Pipeline | 100.000000 | 180,751.622378 | 120,854.078798 | 63,328,748,447.098015 | 0.667966 | True        | False                 | 47,028.000000 | 15,303,523.865787 |    15,303,681.888647 |                    167 |
-| Lasso             | Shared Exported CSV Pipeline |  60.000000 | 182,176.241328 | 121,158.166892 | 63,253,208,125.679558 | 0.668362 | True        | False                 | 30,433.000000 | 15,301,552.241053 |    15,303,681.888647 |                    184 |
-| Lasso             | Shared Exported CSV Pipeline |  30.000000 | 183,288.388677 | 121,430.645487 | 63,205,811,942.377747 | 0.668611 | True        | False                 | 31,873.000000 | 15,299,479.451179 |    15,303,681.888647 |                    191 |
-| Lasso             | Shared Exported CSV Pipeline |  20.000000 | 183,693.516604 | 121,546.492264 | 63,196,886,598.806793 | 0.668658 | True        | False                 | 27,364.000000 | 15,303,535.972581 |    15,303,681.888647 |                    195 |
-| Lasso             | Shared Exported CSV Pipeline |  10.000000 | 184,114.013367 | 121,669.195798 | 63,184,740,162.774429 | 0.668721 | True        | False                 | 31,202.000000 | 15,300,274.726560 |    15,303,681.888647 |                    198 |
+| Linear Regression | Shared Exported CSV Pipeline | nan        | 192,979.185936 | 127,426.799123 | 65,858,789,930.242401 | 0.654701 | True        | False                 |    nan        |        nan        |           nan        |                    209 |
+| Ridge             | Shared Exported CSV Pipeline |   5.000000 | 192,794.125819 | 127,360.561246 | 65,880,004,495.574371 | 0.654590 | True        | False                 |    891.000000 |        nan        |           nan        |                    209 |
+| Ridge             | Shared Exported CSV Pipeline |  10.000000 | 192,643.841805 | 127,309.374171 | 65,902,921,583.234306 | 0.654470 | True        | False                 |    672.000000 |        nan        |           nan        |                    209 |
+| Ridge             | Shared Exported CSV Pipeline |  12.000000 | 192,586.491840 | 127,290.293929 | 65,912,107,053.880943 | 0.654422 | True        | False                 |    655.000000 |        nan        |           nan        |                    209 |
+| Ridge             | Shared Exported CSV Pipeline |  20.000000 | 192,373.561722 | 127,222.603607 | 65,948,476,943.293816 | 0.654231 | True        | False                 |    587.000000 |        nan        |           nan        |                    209 |
+| Ridge             | Shared Exported CSV Pipeline |  30.000000 | 192,135.453627 | 127,152.340617 | 65,992,939,219.119308 | 0.653998 | True        | False                 |    481.000000 |        nan        |           nan        |                    209 |
+| Ridge             | Shared Exported CSV Pipeline |  50.000000 | 191,717.221150 | 127,038.888469 | 66,079,313,565.035118 | 0.653545 | True        | False                 |    407.000000 |        nan        |           nan        |                    209 |
+| Ridge             | Shared Exported CSV Pipeline | 100.000000 | 190,929.164827 | 126,875.707469 | 66,286,384,364.572578 | 0.652459 | True        | False                 |    317.000000 |        nan        |           nan        |                    209 |
+| Lasso             | Shared Exported CSV Pipeline | 100.000000 | 189,367.774872 | 126,647.480985 | 66,155,138,390.242363 | 0.653148 | True        | False                 | 47,508.000000 | 15,301,356.751208 |    15,303,681.888647 |                    170 |
+| Lasso             | Shared Exported CSV Pipeline |  60.000000 | 190,634.252592 | 126,852.394618 | 66,002,412,029.575912 | 0.653948 | True        | False                 | 30,526.000000 | 15,302,651.550881 |    15,303,681.888647 |                    185 |
+| Lasso             | Shared Exported CSV Pipeline |  30.000000 | 191,677.293820 | 127,059.621957 | 65,904,320,871.506454 | 0.654463 | True        | False                 | 32,160.000000 | 15,301,859.324230 |    15,303,681.888647 |                    191 |
+| Lasso             | Shared Exported CSV Pipeline |  20.000000 | 192,064.624514 | 127,154.877262 | 65,882,205,300.448196 | 0.654579 | True        | False                 | 27,686.000000 | 15,303,538.612382 |    15,303,681.888647 |                    193 |
+| Lasso             | Shared Exported CSV Pipeline |  10.000000 | 192,485.952160 | 127,271.378968 | 65,865,646,107.084572 | 0.654665 | True        | False                 | 31,569.000000 | 15,301,103.184903 |    15,303,681.888647 |                    195 |
 
 ## Original Feature Set D comparison
 
 | Model             | Data Representation      | feature_set                           |      alpha |        WAE_2_1 |            MAE |                   MSE |       R2 | run_id   |
 |:------------------|:-------------------------|:--------------------------------------|-----------:|---------------:|---------------:|----------------------:|---------:|:---------|
-| Linear Regression | Original Linear Pipeline | D - Combined + Size x Age Interaction | nan        | 157,254.530691 | 113,051.204225 | 54,135,001,187.274078 | 0.716169 | V005     |
-| Ridge             | Original Linear Pipeline | D                                     |  12.000000 | 153,109.493697 | 110,441.403536 | 52,303,501,091.830894 | 0.725772 | V028     |
-| Lasso             | Original Linear Pipeline | D                                     |  20.000000 | 152,566.388979 | 110,000.675201 | 51,756,702,159.375198 | 0.728639 | V155     |
+| Linear Regression | Original Linear Pipeline | D - Combined + Size x Age Interaction | nan        | 157,254.419439 | 113,051.173551 | 54,137,242,604.027603 | 0.716158 | V005     |
+| Ridge             | Original Linear Pipeline | D                                     |  12.000000 | 153,109.493712 | 110,441.403549 | 52,303,501,089.964081 | 0.725772 | V028     |
+| Lasso             | Original Linear Pipeline | D                                     |  20.000000 | 152,566.388979 | 110,000.675201 | 51,756,702,159.382683 | 0.728639 | V155     |
 
 The two preprocessing pipelines have different feature representations, so their score differences cannot be attributed to the regression algorithm alone. This supplement does not replace the original linear selection or decide the final group model.
 
 Historical record note: `linear_feature_set_results.csv` differs from the 155-run register for Linear D by $0.00 in WAE (2:1). The comparison table uses the 155-run register and does not alter either historical file.
 
-Linear Regression matrix rank: 204/209; singular-value condition ratio: 1.12e+16.
+Linear Regression matrix rank: 205/209; singular-value condition ratio: 1.12e+16.
 
 Ridge grid: 5, 10, 12, 20, 30, 50, 100; one bounded extension after the initial minimum reached alpha 20. Lasso path: 100, 60, 30, 20, 10; warm starts and 100,000 maximum iterations address the non-convergence observed at alpha 10-30 without changing the exported features. Only converged fits are eligible for each model summary.
 

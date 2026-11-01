@@ -1,0 +1,66 @@
+{
+  "model_family": "XGBoost",
+  "candidate_id": "X006",
+  "configuration": "X006 (log1p, 800 trees)",
+  "target": "log1p",
+  "params": {
+    "colsample_bytree": 0.9,
+    "learning_rate": 0.03,
+    "max_depth": 6,
+    "min_child_weight": 5,
+    "n_estimators": 800,
+    "reg_alpha": 0.01,
+    "reg_lambda": 1.0,
+    "subsample": 0.9,
+    "tree_method": "hist"
+  },
+  "n_estimators": 800,
+  "selection_rule": "lowest 2024 H2 validation WAE 2:1 across all evaluated configurations",
+  "predictors": 209,
+  "fit_window": "train+validation",
+  "fit_rows": 72985,
+  "test_rows": 36322,
+  "test_evaluated_once": true,
+  "validation_WAE_2_1": 127037.32035472507,
+  "baseline_fit_mean": 426200.2146057409,
+  "model": {
+    "WAE_2_1": 134003.24732255933,
+    "WAE_1_1": 105304.33015534232,
+    "WAE_1_2": 181909.74314346764,
+    "MSE": 63250763560.2397,
+    "R2": 0.739424644478791,
+    "MAE": 105304.33015534232,
+    "RMSE": 251497.04483400934,
+    "median_APE": 0.1795804578208188,
+    "mean_signed_error": -47906.4958209083,
+    "share_overvalued": 0.36928032597323934,
+    "median_ratio": 0.9246523257653061,
+    "COD": 30.873886484206434,
+    "PRD": 1.1553601677390064
+  },
+  "baseline": {
+    "WAE_2_1": 360698.9988799583,
+    "WAE_1_1": 256774.3484272706,
+    "WAE_1_2": 409624.04640185356,
+    "MSE": 245128678073.32233,
+    "R2": -0.009861207075646083,
+    "MAE": 256774.3484272706,
+    "RMSE": 495104.71425075555,
+    "median_APE": 0.42791917502585114,
+    "mean_signed_error": -48925.04752189522,
+    "share_overvalued": 0.6230659104674853,
+    "median_ratio": 1.183889485015947,
+    "COD": 76.17038158838706,
+    "PRD": 1.8460572168889517
+  },
+  "reduction_percent": {
+    "WAE_2_1": 62.849010466159896,
+    "WAE_1_1": 58.98954439945976,
+    "WAE_1_2": 55.59104873325511
+  },
+  "split_sha256": {
+    "train": "ef2edda8ba4843c293cbe4eaaa51243e167e972a6e27e2110fb096c3ce19eb99",
+    "validation": "2a9628eae761586203e2022c12bed46b339a2a306fe3a40bdd667e34f2081b02",
+    "test": "5651710e88b6642977949d8ef80cb0375d3f7daf92e9c2268c4c9fa73d539fbc"
+  }
+}

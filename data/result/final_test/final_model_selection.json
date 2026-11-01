@@ -1,0 +1,42 @@
+{
+  "selection_rule": "lowest 2024 H2 validation WAE 2:1 across all evaluated configurations",
+  "model_family": "XGBoost",
+  "candidate_id": "X006",
+  "configuration": "X006 (log1p, 800 trees)",
+  "target": "log1p",
+  "params": {
+    "colsample_bytree": 0.9,
+    "learning_rate": 0.03,
+    "max_depth": 6,
+    "min_child_weight": 5,
+    "n_estimators": 800,
+    "reg_alpha": 0.01,
+    "reg_lambda": 1.0,
+    "subsample": 0.9,
+    "tree_method": "hist"
+  },
+  "n_estimators": 800,
+  "predictors": 209,
+  "time_variable": "Model B was not fitted for XGBoost; Boosting evidence from the LightGBM fixed-hyperparameter comparison (section 11): retain_A, WAE 2:1 change +6.85%",
+  "fit_window_for_test": "train+validation",
+  "validation_metrics": {
+    "WAE_2_1": 127037.32035472507,
+    "WAE_1_1": 101086.26059396888,
+    "WAE_1_2": 176221.46142718158,
+    "MSE": 44506225862.91744,
+    "R2": 0.7666531692317231,
+    "MAE": 101086.26059396888
+  },
+  "runner_up": {
+    "model_family": "CatBoost",
+    "configuration": "K006 (log1p, 800 trees)",
+    "WAE_2_1": 127094.43652565317
+  },
+  "split_sha256": {
+    "train": "ef2edda8ba4843c293cbe4eaaa51243e167e972a6e27e2110fb096c3ce19eb99",
+    "validation": "2a9628eae761586203e2022c12bed46b339a2a306fe3a40bdd667e34f2081b02",
+    "test": "5651710e88b6642977949d8ef80cb0375d3f7daf92e9c2268c4c9fa73d539fbc"
+  },
+  "frozen_utc": "2026-11-01T14:06:14.518506+00:00",
+  "test_read": false
+}

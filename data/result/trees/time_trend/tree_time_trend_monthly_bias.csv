@@ -1,0 +1,97 @@
+model_family,selected_by,comparison,variant,configuration,sale_month,sales,mean_signed_error,median_ratio,MAE
+Decision Tree,main rule: lowest WAE 2:1,fixed_hyperparameters,A_no_time,"max_depth=10, min_samples_leaf=10",2024-07,3485,-27769.859788727837,0.9291846230744762,121663.12415831893
+Decision Tree,main rule: lowest WAE 2:1,fixed_hyperparameters,A_no_time,"max_depth=10, min_samples_leaf=10",2024-08,3297,-33068.164085134886,0.9495034482758621,123510.35983616265
+Decision Tree,main rule: lowest WAE 2:1,fixed_hyperparameters,A_no_time,"max_depth=10, min_samples_leaf=10",2024-09,2986,-25728.359326082336,0.9427194407267461,114624.71849733316
+Decision Tree,main rule: lowest WAE 2:1,fixed_hyperparameters,A_no_time,"max_depth=10, min_samples_leaf=10",2024-10,3087,-18597.902530362222,0.9600012372802961,109908.0430314303
+Decision Tree,main rule: lowest WAE 2:1,fixed_hyperparameters,A_no_time,"max_depth=10, min_samples_leaf=10",2024-11,2701,-23556.554720711953,0.9473449527305468,110328.26911118427
+Decision Tree,main rule: lowest WAE 2:1,fixed_hyperparameters,A_no_time,"max_depth=10, min_samples_leaf=10",2024-12,2576,-17915.983976642114,0.9575941908294412,110761.97833018278
+Decision Tree,main rule: lowest WAE 2:1,fixed_hyperparameters,B_month_index,"max_depth=10, min_samples_leaf=10",2024-07,3485,-23322.86293377848,0.9405303030303029,120848.14767212312
+Decision Tree,main rule: lowest WAE 2:1,fixed_hyperparameters,B_month_index,"max_depth=10, min_samples_leaf=10",2024-08,3297,-27189.61378881792,0.9624027815384615,123823.51386384072
+Decision Tree,main rule: lowest WAE 2:1,fixed_hyperparameters,B_month_index,"max_depth=10, min_samples_leaf=10",2024-09,2986,-19508.564373298104,0.9560347747051978,115939.62182096016
+Decision Tree,main rule: lowest WAE 2:1,fixed_hyperparameters,B_month_index,"max_depth=10, min_samples_leaf=10",2024-10,3087,-12699.997173533464,0.98003194,110745.8103442308
+Decision Tree,main rule: lowest WAE 2:1,fixed_hyperparameters,B_month_index,"max_depth=10, min_samples_leaf=10",2024-11,2701,-18060.6264361429,0.9614032029404043,111704.26217051526
+Decision Tree,main rule: lowest WAE 2:1,fixed_hyperparameters,B_month_index,"max_depth=10, min_samples_leaf=10",2024-12,2576,-12726.160820267021,0.9737241170025062,111580.72565215113
+Decision Tree,main rule: lowest WAE 2:1,retuned,A_no_time,"max_depth=10, min_samples_leaf=10",2024-07,3485,-27769.859788727837,0.9291846230744762,121663.12415831893
+Decision Tree,main rule: lowest WAE 2:1,retuned,A_no_time,"max_depth=10, min_samples_leaf=10",2024-08,3297,-33068.164085134886,0.9495034482758621,123510.35983616265
+Decision Tree,main rule: lowest WAE 2:1,retuned,A_no_time,"max_depth=10, min_samples_leaf=10",2024-09,2986,-25728.359326082336,0.9427194407267461,114624.71849733316
+Decision Tree,main rule: lowest WAE 2:1,retuned,A_no_time,"max_depth=10, min_samples_leaf=10",2024-10,3087,-18597.902530362222,0.9600012372802961,109908.0430314303
+Decision Tree,main rule: lowest WAE 2:1,retuned,A_no_time,"max_depth=10, min_samples_leaf=10",2024-11,2701,-23556.554720711953,0.9473449527305468,110328.26911118427
+Decision Tree,main rule: lowest WAE 2:1,retuned,A_no_time,"max_depth=10, min_samples_leaf=10",2024-12,2576,-17915.983976642114,0.9575941908294412,110761.97833018278
+Decision Tree,main rule: lowest WAE 2:1,retuned,B_month_index,"max_depth=8, min_samples_leaf=10",2024-07,3485,-26893.06262828939,0.9324801298863495,121463.1405630657
+Decision Tree,main rule: lowest WAE 2:1,retuned,B_month_index,"max_depth=8, min_samples_leaf=10",2024-08,3297,-32776.69476543349,0.9568612216594308,124999.5769847518
+Decision Tree,main rule: lowest WAE 2:1,retuned,B_month_index,"max_depth=8, min_samples_leaf=10",2024-09,2986,-23342.520701756614,0.947946961829919,115470.78153836017
+Decision Tree,main rule: lowest WAE 2:1,retuned,B_month_index,"max_depth=8, min_samples_leaf=10",2024-10,3087,-18643.0659470916,0.9646405811851172,110441.39292403212
+Decision Tree,main rule: lowest WAE 2:1,retuned,B_month_index,"max_depth=8, min_samples_leaf=10",2024-11,2701,-21583.087265337857,0.9579925669614251,111558.67513778218
+Decision Tree,main rule: lowest WAE 2:1,retuned,B_month_index,"max_depth=8, min_samples_leaf=10",2024-12,2576,-18201.608176831913,0.9618609149947407,110475.16566575892
+Decision Tree,supplementary rule: lowest MSE,fixed_hyperparameters,A_no_time,"max_depth=8, min_samples_leaf=10",2024-07,3485,-25869.811395889006,0.9328355759815992,122024.94801945834
+Decision Tree,supplementary rule: lowest MSE,fixed_hyperparameters,A_no_time,"max_depth=8, min_samples_leaf=10",2024-08,3297,-32789.406046452284,0.9568612216594308,124719.96600755675
+Decision Tree,supplementary rule: lowest MSE,fixed_hyperparameters,A_no_time,"max_depth=8, min_samples_leaf=10",2024-09,2986,-23869.214695319773,0.9463640616482178,115610.38324237593
+Decision Tree,supplementary rule: lowest MSE,fixed_hyperparameters,A_no_time,"max_depth=8, min_samples_leaf=10",2024-10,3087,-19151.080308940887,0.9646405811851172,109951.36928228039
+Decision Tree,supplementary rule: lowest MSE,fixed_hyperparameters,A_no_time,"max_depth=8, min_samples_leaf=10",2024-11,2701,-22000.714783345586,0.9579925669614251,111312.11994554609
+Decision Tree,supplementary rule: lowest MSE,fixed_hyperparameters,A_no_time,"max_depth=8, min_samples_leaf=10",2024-12,2576,-18328.615088363687,0.9618893521107073,110119.52331649943
+Decision Tree,supplementary rule: lowest MSE,fixed_hyperparameters,B_month_index,"max_depth=8, min_samples_leaf=10",2024-07,3485,-26893.06262828939,0.9324801298863495,121463.1405630657
+Decision Tree,supplementary rule: lowest MSE,fixed_hyperparameters,B_month_index,"max_depth=8, min_samples_leaf=10",2024-08,3297,-32776.69476543349,0.9568612216594308,124999.5769847518
+Decision Tree,supplementary rule: lowest MSE,fixed_hyperparameters,B_month_index,"max_depth=8, min_samples_leaf=10",2024-09,2986,-23342.520701756614,0.947946961829919,115470.78153836017
+Decision Tree,supplementary rule: lowest MSE,fixed_hyperparameters,B_month_index,"max_depth=8, min_samples_leaf=10",2024-10,3087,-18643.0659470916,0.9646405811851172,110441.39292403212
+Decision Tree,supplementary rule: lowest MSE,fixed_hyperparameters,B_month_index,"max_depth=8, min_samples_leaf=10",2024-11,2701,-21583.087265337857,0.9579925669614251,111558.67513778218
+Decision Tree,supplementary rule: lowest MSE,fixed_hyperparameters,B_month_index,"max_depth=8, min_samples_leaf=10",2024-12,2576,-18201.608176831913,0.9618609149947407,110475.16566575892
+Decision Tree,supplementary rule: lowest MSE,retuned,A_no_time,"max_depth=8, min_samples_leaf=10",2024-07,3485,-25869.811395889006,0.9328355759815992,122024.94801945834
+Decision Tree,supplementary rule: lowest MSE,retuned,A_no_time,"max_depth=8, min_samples_leaf=10",2024-08,3297,-32789.406046452284,0.9568612216594308,124719.96600755675
+Decision Tree,supplementary rule: lowest MSE,retuned,A_no_time,"max_depth=8, min_samples_leaf=10",2024-09,2986,-23869.214695319773,0.9463640616482178,115610.38324237593
+Decision Tree,supplementary rule: lowest MSE,retuned,A_no_time,"max_depth=8, min_samples_leaf=10",2024-10,3087,-19151.080308940887,0.9646405811851172,109951.36928228039
+Decision Tree,supplementary rule: lowest MSE,retuned,A_no_time,"max_depth=8, min_samples_leaf=10",2024-11,2701,-22000.714783345586,0.9579925669614251,111312.11994554609
+Decision Tree,supplementary rule: lowest MSE,retuned,A_no_time,"max_depth=8, min_samples_leaf=10",2024-12,2576,-18328.615088363687,0.9618893521107073,110119.52331649943
+Decision Tree,supplementary rule: lowest MSE,retuned,B_month_index,"max_depth=8, min_samples_leaf=10",2024-07,3485,-26893.06262828939,0.9324801298863495,121463.1405630657
+Decision Tree,supplementary rule: lowest MSE,retuned,B_month_index,"max_depth=8, min_samples_leaf=10",2024-08,3297,-32776.69476543349,0.9568612216594308,124999.5769847518
+Decision Tree,supplementary rule: lowest MSE,retuned,B_month_index,"max_depth=8, min_samples_leaf=10",2024-09,2986,-23342.520701756614,0.947946961829919,115470.78153836017
+Decision Tree,supplementary rule: lowest MSE,retuned,B_month_index,"max_depth=8, min_samples_leaf=10",2024-10,3087,-18643.0659470916,0.9646405811851172,110441.39292403212
+Decision Tree,supplementary rule: lowest MSE,retuned,B_month_index,"max_depth=8, min_samples_leaf=10",2024-11,2701,-21583.087265337857,0.9579925669614251,111558.67513778218
+Decision Tree,supplementary rule: lowest MSE,retuned,B_month_index,"max_depth=8, min_samples_leaf=10",2024-12,2576,-18201.608176831913,0.9618609149947407,110475.16566575892
+Random Forest,main rule: lowest WAE 2:1,fixed_hyperparameters,A_no_time,"n_estimators=100, max_features=0.5, min_samples_leaf=10",2024-07,3485,-31897.213661218237,0.9346094729965728,103272.91199002403
+Random Forest,main rule: lowest WAE 2:1,fixed_hyperparameters,A_no_time,"n_estimators=100, max_features=0.5, min_samples_leaf=10",2024-08,3297,-30766.171306776745,0.950717767841109,108509.69394658474
+Random Forest,main rule: lowest WAE 2:1,fixed_hyperparameters,A_no_time,"n_estimators=100, max_features=0.5, min_samples_leaf=10",2024-09,2986,-24469.983139769018,0.9464049345778618,99326.5779734194
+Random Forest,main rule: lowest WAE 2:1,fixed_hyperparameters,A_no_time,"n_estimators=100, max_features=0.5, min_samples_leaf=10",2024-10,3087,-17555.491570075155,0.95274172879436,97006.12746429791
+Random Forest,main rule: lowest WAE 2:1,fixed_hyperparameters,A_no_time,"n_estimators=100, max_features=0.5, min_samples_leaf=10",2024-11,2701,-22367.74049425105,0.9550418799316962,97533.58606473454
+Random Forest,main rule: lowest WAE 2:1,fixed_hyperparameters,A_no_time,"n_estimators=100, max_features=0.5, min_samples_leaf=10",2024-12,2576,-17010.658858641375,0.9639703825876502,98963.18971057804
+Random Forest,main rule: lowest WAE 2:1,fixed_hyperparameters,B_month_index,"n_estimators=100, max_features=0.5, min_samples_leaf=10",2024-07,3485,-19019.42585079988,0.9649000970330218,101857.23013431048
+Random Forest,main rule: lowest WAE 2:1,fixed_hyperparameters,B_month_index,"n_estimators=100, max_features=0.5, min_samples_leaf=10",2024-08,3297,-18448.854310448824,0.9846358773970938,108281.32369627395
+Random Forest,main rule: lowest WAE 2:1,fixed_hyperparameters,B_month_index,"n_estimators=100, max_features=0.5, min_samples_leaf=10",2024-09,2986,-12034.045386796746,0.9826316890644697,98991.07608195525
+Random Forest,main rule: lowest WAE 2:1,fixed_hyperparameters,B_month_index,"n_estimators=100, max_features=0.5, min_samples_leaf=10",2024-10,3087,-4875.723843590618,0.9880716332666044,96495.24120248544
+Random Forest,main rule: lowest WAE 2:1,fixed_hyperparameters,B_month_index,"n_estimators=100, max_features=0.5, min_samples_leaf=10",2024-11,2701,-9422.612235318178,0.9844091470266876,97062.7000370957
+Random Forest,main rule: lowest WAE 2:1,fixed_hyperparameters,B_month_index,"n_estimators=100, max_features=0.5, min_samples_leaf=10",2024-12,2576,-4530.186377644745,0.9953962997807502,98879.31729494098
+Random Forest,main rule: lowest WAE 2:1,retuned,A_no_time,"n_estimators=100, max_features=0.5, min_samples_leaf=10",2024-07,3485,-31897.213661218237,0.9346094729965728,103272.91199002403
+Random Forest,main rule: lowest WAE 2:1,retuned,A_no_time,"n_estimators=100, max_features=0.5, min_samples_leaf=10",2024-08,3297,-30766.171306776745,0.950717767841109,108509.69394658474
+Random Forest,main rule: lowest WAE 2:1,retuned,A_no_time,"n_estimators=100, max_features=0.5, min_samples_leaf=10",2024-09,2986,-24469.983139769018,0.9464049345778618,99326.5779734194
+Random Forest,main rule: lowest WAE 2:1,retuned,A_no_time,"n_estimators=100, max_features=0.5, min_samples_leaf=10",2024-10,3087,-17555.491570075155,0.95274172879436,97006.12746429791
+Random Forest,main rule: lowest WAE 2:1,retuned,A_no_time,"n_estimators=100, max_features=0.5, min_samples_leaf=10",2024-11,2701,-22367.74049425105,0.9550418799316962,97533.58606473454
+Random Forest,main rule: lowest WAE 2:1,retuned,A_no_time,"n_estimators=100, max_features=0.5, min_samples_leaf=10",2024-12,2576,-17010.658858641375,0.9639703825876502,98963.18971057804
+Random Forest,main rule: lowest WAE 2:1,retuned,B_month_index,"n_estimators=100, max_features=0.2, min_samples_leaf=10",2024-07,3485,-23388.38088763452,0.9615888715460886,101929.18689667457
+Random Forest,main rule: lowest WAE 2:1,retuned,B_month_index,"n_estimators=100, max_features=0.2, min_samples_leaf=10",2024-08,3297,-22599.556739115327,0.976898104017882,107964.6624407916
+Random Forest,main rule: lowest WAE 2:1,retuned,B_month_index,"n_estimators=100, max_features=0.2, min_samples_leaf=10",2024-09,2986,-16076.872038872003,0.9724099754429907,98849.32325224184
+Random Forest,main rule: lowest WAE 2:1,retuned,B_month_index,"n_estimators=100, max_features=0.2, min_samples_leaf=10",2024-10,3087,-9091.368264320683,0.9756013123511269,96894.92408822734
+Random Forest,main rule: lowest WAE 2:1,retuned,B_month_index,"n_estimators=100, max_features=0.2, min_samples_leaf=10",2024-11,2701,-13795.789434935015,0.9788355747622268,96882.11548535421
+Random Forest,main rule: lowest WAE 2:1,retuned,B_month_index,"n_estimators=100, max_features=0.2, min_samples_leaf=10",2024-12,2576,-8662.660088257022,0.9865451563537998,98968.20259836616
+Random Forest,supplementary rule: lowest MSE,fixed_hyperparameters,A_no_time,"n_estimators=100, max_features=0.33, min_samples_leaf=3",2024-07,3485,-31976.154451338876,0.9365675094715529,102601.0402878719
+Random Forest,supplementary rule: lowest MSE,fixed_hyperparameters,A_no_time,"n_estimators=100, max_features=0.33, min_samples_leaf=3",2024-08,3297,-28883.946832924827,0.9526987276379174,108482.8119380588
+Random Forest,supplementary rule: lowest MSE,fixed_hyperparameters,A_no_time,"n_estimators=100, max_features=0.33, min_samples_leaf=3",2024-09,2986,-24766.33775159632,0.9449603606073234,100534.00515369106
+Random Forest,supplementary rule: lowest MSE,fixed_hyperparameters,A_no_time,"n_estimators=100, max_features=0.33, min_samples_leaf=3",2024-10,3087,-16847.356059340982,0.948507364276854,97549.92910286547
+Random Forest,supplementary rule: lowest MSE,fixed_hyperparameters,A_no_time,"n_estimators=100, max_features=0.33, min_samples_leaf=3",2024-11,2701,-22398.572760600175,0.9537805644549053,97977.93983201413
+Random Forest,supplementary rule: lowest MSE,fixed_hyperparameters,A_no_time,"n_estimators=100, max_features=0.33, min_samples_leaf=3",2024-12,2576,-16672.454152193666,0.9622887903191875,99738.77176067118
+Random Forest,supplementary rule: lowest MSE,fixed_hyperparameters,B_month_index,"n_estimators=100, max_features=0.33, min_samples_leaf=3",2024-07,3485,-18652.45373618858,0.9656147277140575,101038.51924574074
+Random Forest,supplementary rule: lowest MSE,fixed_hyperparameters,B_month_index,"n_estimators=100, max_features=0.33, min_samples_leaf=3",2024-08,3297,-15553.804796018969,0.9865180174915826,107400.67548213682
+Random Forest,supplementary rule: lowest MSE,fixed_hyperparameters,B_month_index,"n_estimators=100, max_features=0.33, min_samples_leaf=3",2024-09,2986,-11638.299323688087,0.9788852508831704,99465.95323446774
+Random Forest,supplementary rule: lowest MSE,fixed_hyperparameters,B_month_index,"n_estimators=100, max_features=0.33, min_samples_leaf=3",2024-10,3087,-4505.60308856607,0.9859693463150543,96745.1798094374
+Random Forest,supplementary rule: lowest MSE,fixed_hyperparameters,B_month_index,"n_estimators=100, max_features=0.33, min_samples_leaf=3",2024-11,2701,-9308.690278926506,0.9888317398254414,96888.42316416066
+Random Forest,supplementary rule: lowest MSE,fixed_hyperparameters,B_month_index,"n_estimators=100, max_features=0.33, min_samples_leaf=3",2024-12,2576,-3496.419398678108,0.9972447744991035,99621.25469856661
+Random Forest,supplementary rule: lowest MSE,retuned,A_no_time,"n_estimators=100, max_features=0.33, min_samples_leaf=3",2024-07,3485,-31976.154451338876,0.9365675094715529,102601.0402878719
+Random Forest,supplementary rule: lowest MSE,retuned,A_no_time,"n_estimators=100, max_features=0.33, min_samples_leaf=3",2024-08,3297,-28883.946832924827,0.9526987276379174,108482.8119380588
+Random Forest,supplementary rule: lowest MSE,retuned,A_no_time,"n_estimators=100, max_features=0.33, min_samples_leaf=3",2024-09,2986,-24766.33775159632,0.9449603606073234,100534.00515369106
+Random Forest,supplementary rule: lowest MSE,retuned,A_no_time,"n_estimators=100, max_features=0.33, min_samples_leaf=3",2024-10,3087,-16847.356059340982,0.948507364276854,97549.92910286547
+Random Forest,supplementary rule: lowest MSE,retuned,A_no_time,"n_estimators=100, max_features=0.33, min_samples_leaf=3",2024-11,2701,-22398.572760600175,0.9537805644549053,97977.93983201413
+Random Forest,supplementary rule: lowest MSE,retuned,A_no_time,"n_estimators=100, max_features=0.33, min_samples_leaf=3",2024-12,2576,-16672.454152193666,0.9622887903191875,99738.77176067118
+Random Forest,supplementary rule: lowest MSE,retuned,B_month_index,"n_estimators=100, max_features=0.33, min_samples_leaf=3",2024-07,3485,-18652.45373618858,0.9656147277140575,101038.51924574074
+Random Forest,supplementary rule: lowest MSE,retuned,B_month_index,"n_estimators=100, max_features=0.33, min_samples_leaf=3",2024-08,3297,-15553.804796018969,0.9865180174915826,107400.67548213682
+Random Forest,supplementary rule: lowest MSE,retuned,B_month_index,"n_estimators=100, max_features=0.33, min_samples_leaf=3",2024-09,2986,-11638.299323688087,0.9788852508831704,99465.95323446774
+Random Forest,supplementary rule: lowest MSE,retuned,B_month_index,"n_estimators=100, max_features=0.33, min_samples_leaf=3",2024-10,3087,-4505.60308856607,0.9859693463150543,96745.1798094374
+Random Forest,supplementary rule: lowest MSE,retuned,B_month_index,"n_estimators=100, max_features=0.33, min_samples_leaf=3",2024-11,2701,-9308.690278926506,0.9888317398254414,96888.42316416066
+Random Forest,supplementary rule: lowest MSE,retuned,B_month_index,"n_estimators=100, max_features=0.33, min_samples_leaf=3",2024-12,2576,-3496.419398678108,0.9972447744991035,99621.25469856661

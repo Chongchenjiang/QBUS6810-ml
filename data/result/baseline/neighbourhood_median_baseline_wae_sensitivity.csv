@@ -1,0 +1,4 @@
+﻿Scenario,Overvaluation Weight,Undervaluation Weight,Global Mean WAE ($),Neighbourhood median WAE ($)
+Equal priority,1,1,238599.61751825263,135959.86239797043
+Greater concern about overvaluation,2,1,342381.82310051686,177265.28052614164
+Greater concern about undervaluation,1,2,373417.0294542411,230614.30666776968
