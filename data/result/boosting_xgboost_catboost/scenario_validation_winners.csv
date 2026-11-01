@@ -1,0 +1,13 @@
+model_family,scenario,winning_configuration,feature_set,selected_WAE,MSE,R2,MAE
+CatBoost,Main - Overvaluation Priority (2:1),"K006 (log1p, 800 trees)",A_no_time,127173.0029505815,47898521779.23066,0.7488673092592784,101842.45395189054
+CatBoost,Alternative - Equal Priority (1:1),"K003 (raw, 800 trees)",A_no_time,99136.97860104466,42839121480.00169,0.7753938233036162,99136.97860104466
+CatBoost,Alternative - Undervaluation Priority (1:2),"K003 (raw, 800 trees)",A_no_time,162924.02510780928,42839121480.00169,0.7753938233036162,99136.97860104466
+HistGradientBoosting,Main - Overvaluation Priority (2:1),"H005 (log1p, 400 trees)",A_no_time,129111.29311936014,47922412190.622536,0.748742051462735,102426.05234029828
+HistGradientBoosting,Alternative - Equal Priority (1:1),"H002 (raw, 400 trees)",A_no_time,99834.42533357578,45027012780.89536,0.7639226753635163,99834.42533357578
+HistGradientBoosting,Alternative - Undervaluation Priority (1:2),"H002 (raw, 400 trees)",A_no_time,164079.0598358099,45027012780.89536,0.7639226753635163,99834.42533357578
+LightGBM,Main - Overvaluation Priority (2:1),"C007 (log1p, 787 trees)",A_no_time,127131.07386232974,47937265512.14258,0.7486641752682053,101136.8521151078
+LightGBM,Alternative - Equal Priority (1:1),"C001 (raw, 742 trees)",A_no_time,100015.43496134208,45200693296.18272,0.7630120657348021,100015.43496134208
+LightGBM,Alternative - Undervaluation Priority (1:2),"C003 (raw, 1391 trees)",A_no_time,165947.00579166692,45920606116.05268,0.7592375516822394,100099.07452954864
+XGBoost,Main - Overvaluation Priority (2:1),"X006 (log1p, 800 trees)",A_no_time,127195.66987512581,43538503172.71186,0.7717269542683954,101220.82589181075
+XGBoost,Alternative - Equal Priority (1:1),"X003 (raw, 800 trees)",A_no_time,99392.35462327911,44306209403.918304,0.7677018586207696,99392.35462327911
+XGBoost,Alternative - Undervaluation Priority (1:2),"X003 (raw, 800 trees)",A_no_time,164628.17399303976,44306209403.918304,0.7677018586207696,99392.35462327911
