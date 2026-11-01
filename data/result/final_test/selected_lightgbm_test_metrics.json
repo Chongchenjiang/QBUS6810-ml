@@ -1,0 +1,46 @@
+{
+  "model_family": "LightGBM",
+  "configuration": "C007 (log1p, 787 trees)",
+  "selection": "lowest validation WAE 2:1 across model families",
+  "fit_window": "train+validation",
+  "fit_rows": 72985,
+  "test_rows": 36322,
+  "predictors": 209,
+  "test_evaluated_once": true,
+  "validation_WAE_2_1": 127131.07386232974,
+  "baseline_fit_mean": 426200.2146057409,
+  "model": {
+    "MSE": 69539788207.12296,
+    "RMSE": 263703.9783680234,
+    "R2": 0.713515631828177,
+    "MAE": 105940.66699936411,
+    "mean_signed_error": -48508.175734440665,
+    "median_ratio": 0.924081444873992,
+    "share_overvalued": 0.36961070425637355,
+    "WAE_2_1": 134656.91263182583,
+    "WAE_1_1": 105940.66699936411,
+    "WAE_1_2": 183165.08836626651
+  },
+  "baseline": {
+    "MSE": 245128678073.32233,
+    "RMSE": 495104.71425075555,
+    "R2": -0.009861207075646083,
+    "MAE": 256774.3484272706,
+    "mean_signed_error": -48925.04752189522,
+    "median_ratio": 1.183889485015947,
+    "share_overvalued": 0.6230659104674853,
+    "WAE_2_1": 360698.9988799583,
+    "WAE_1_1": 256774.3484272706,
+    "WAE_1_2": 409624.04640185356
+  },
+  "reduction_percent": {
+    "WAE_2_1": 62.66778864095488,
+    "WAE_1_1": 58.74172492375305,
+    "WAE_1_2": 55.28458595749137
+  },
+  "split_hashes": {
+    "train": "9968adbaa619663d54332234c8537e912530c4c6db79f82aaf155e39b56db6e8",
+    "validation": "85ecd42215dbb814a8d807a0dd85c9224f3d9c6d63c3bb4bad8bbfb827cbd495",
+    "test": "1a37862b7443d5529f6771737fe0efcd10f95833f7165a42e9024e7a4efec24a"
+  }
+}
