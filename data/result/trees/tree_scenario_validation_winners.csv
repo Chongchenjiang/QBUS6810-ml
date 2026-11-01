@@ -1,0 +1,7 @@
+model_family,scenario,winning_configuration,feature_set,selected_WAE,MSE,R2,MAE
+Decision Tree,Main - Overvaluation Priority (2:1),"max_depth=10, min_samples_leaf=10",Official split CSV (209 predictors),160998.12339332904,59195005840.28179,0.6896396685559368,115601.40598888657
+Decision Tree,Alternative - Equal Priority (1:1),"max_depth=10, min_samples_leaf=50",Official split CSV (209 predictors),115538.38754761423,61896057811.31623,0.6754780112830283,115538.38754761423
+Decision Tree,Alternative - Undervaluation Priority (1:2),"max_depth=10, min_samples_leaf=50",Official split CSV (209 predictors),185036.44534303626,61896057811.31623,0.6754780112830283,115538.38754761423
+Random Forest,Main - Overvaluation Priority (2:1),"n_estimators=100, max_features=0.5, min_samples_leaf=10",Official split CSV (209 predictors),139315.50117872332,48679659448.57267,0.7447717923737058,101041.08919001427
+Random Forest,Alternative - Equal Priority (1:1),"n_estimators=100, max_features=0.5, min_samples_leaf=10",Official split CSV (209 predictors),101041.08919001427,48679659448.57267,0.7447717923737058,101041.08919001427
+Random Forest,Alternative - Undervaluation Priority (1:2),"n_estimators=100, max_features=0.2, min_samples_leaf=10",Official split CSV (209 predictors),163802.43198905184,49191916835.86971,0.7420860189668217,101230.95052200768
