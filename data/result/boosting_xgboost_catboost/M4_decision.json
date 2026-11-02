@@ -1,10 +1,6 @@
 {
   "selection_metric": "2024H2 validation WAE_2_1",
-  "A_winner": "C020 (log1p, 912 trees)",
-  "B_winner": "T009 (log1p, 90 trees)",
-  "fixed_improvement_pct": -6.846114921606866,
-  "decision": "retain_A",
-  "MAE_improves_while_WAE_worsens": true,
+  "rule": "adopt B only if fixed-hyperparameter WAE 2:1 falls by more than 1%",
   "train_month_range": [
     0,
     17
@@ -13,5 +9,39 @@
     18,
     23
   ],
-  "test_read": false
+  "test_read": false,
+  "families": {
+    "LightGBM": {
+      "A_winner": "C022 (log1p, 1077 trees)",
+      "B_winner": "CB010 (log1p, 81 trees)",
+      "fixed_WAE_2_1_change_pct": 6.446360279489682,
+      "fixed_MAE_change_pct": -5.508446172175763,
+      "decision": "retain_A",
+      "rule_outcome": "Keep A: MAE improves but WAE 2:1 worsens (report the trade-off)"
+    },
+    "XGBoost": {
+      "A_winner": "X021 (log1p, 1377 trees)",
+      "B_winner": "XB013 (log1p, 117 trees)",
+      "fixed_WAE_2_1_change_pct": 7.289600053950607,
+      "fixed_MAE_change_pct": -5.105064645978407,
+      "decision": "retain_A",
+      "rule_outcome": "Keep A: MAE improves but WAE 2:1 worsens (report the trade-off)"
+    },
+    "CatBoost": {
+      "A_winner": "K002 (log1p, 1376 trees)",
+      "B_winner": "KB022 (log1p, 1208 trees)",
+      "fixed_WAE_2_1_change_pct": 7.536767651773668,
+      "fixed_MAE_change_pct": -5.221716699105117,
+      "decision": "retain_A",
+      "rule_outcome": "Keep A: MAE improves but WAE 2:1 worsens (report the trade-off)"
+    },
+    "HistGradientBoosting": {
+      "A_winner": "H023 (log1p, 1370 trees)",
+      "B_winner": "HB019 (log1p, 343 trees)",
+      "fixed_WAE_2_1_change_pct": 6.286885055930869,
+      "fixed_MAE_change_pct": -5.41859154636578,
+      "decision": "retain_A",
+      "rule_outcome": "Keep A: MAE improves but WAE 2:1 worsens (report the trade-off)"
+    }
+  }
 }

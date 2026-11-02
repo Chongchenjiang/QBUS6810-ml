@@ -1,4 +1,4 @@
 scenario,model_family,winning_configuration,selected_WAE,baseline_WAE,reduction_pct
-Main - Overvaluation Priority (2:1),XGBoost,"X006 (log1p, 800 trees)",127037.32035472507,342381.82310051686,62.89600913847892
-Alternative - Equal Priority (1:1),XGBoost,"X006 (log1p, 800 trees)",101086.26059396888,238599.61751825263,57.63351943083652
-Alternative - Undervaluation Priority (1:2),XGBoost,"X006 (log1p, 800 trees)",176221.46142718158,373417.0294542411,52.80840252927567
+Main - Overvaluation Priority (2:1),CatBoost,"K002 (log1p, 1376 trees)",126068.73756860504,342381.82310051686,63.17890464307925
+Alternative - Equal Priority (1:1),CatBoost,"K002 (log1p, 1376 trees)",100541.87106806641,238599.61751825263,57.861679698470155
+Alternative - Undervaluation Priority (1:2),CatBoost,"K002 (log1p, 1376 trees)",175556.87563559428,373417.0294542411,52.98637668127366
